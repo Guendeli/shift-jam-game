@@ -692,7 +692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutoAttributePlayerIDs: 1
   PlayerPrefabs:
-  - {fileID: 114873785417298432, guid: a200a0b4274de1d4da0e68119fadcbbb, type: 3}
+  - {fileID: 114873785417298432, guid: 8dacada3e6f49dc4caa29b48beefa668, type: 3}
   SceneCharacters: []
   InitialSpawnPoint: {fileID: 1475545980}
   CurrentCheckpoint: {fileID: 0}
@@ -20169,7 +20169,7 @@ MonoBehaviour:
   - {fileID: 0}
   InventoryType: 0
   TargetTransform: {fileID: 0}
-  Persistent: 0
+  Persistent: 1
   ResetThisInventorySaveOnStart: 0
   DrawContentInInspector: 1
 --- !u!1001 &828773078
@@ -37685,7 +37685,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 33
+      m_TileSpriteIndex: 37
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -37705,7 +37705,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 32
+      m_TileSpriteIndex: 33
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -37785,7 +37785,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 31
+      m_TileSpriteIndex: 32
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -37795,7 +37795,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 30
+      m_TileSpriteIndex: 31
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -37835,7 +37835,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 29
+      m_TileSpriteIndex: 30
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -38935,7 +38935,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 3
-      m_TileSpriteIndex: 28
+      m_TileSpriteIndex: 29
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -39185,7 +39185,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 26
+      m_TileSpriteIndex: 28
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -39796,10 +39796,12 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: 21300004, guid: 30482aebb23a4f04ba78ad3ed349542d, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300002, guid: 30482aebb23a4f04ba78ad3ed349542d, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: 21300014, guid: 30482aebb23a4f04ba78ad3ed349542d, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300002, guid: 30482aebb23a4f04ba78ad3ed349542d, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300036, guid: e447093ef558f8a4ba40ac962b9d54ff, type: 3}
   - m_RefCount: 1
@@ -39810,16 +39812,14 @@ Tilemap:
     m_Data: {fileID: -1186797504, guid: 7bbba595ff2bf944d9a45589c687737e, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300044, guid: 51cb2138e31194c19b6838948e281fae, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1970153446, guid: 7bbba595ff2bf944d9a45589c687737e, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1029313997, guid: 7bbba595ff2bf944d9a45589c687737e, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 1393812173, guid: 7bbba595ff2bf944d9a45589c687737e, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1938281683, guid: 7bbba595ff2bf944d9a45589c687737e, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 1970153446, guid: 7bbba595ff2bf944d9a45589c687737e, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -323671561, guid: 7bbba595ff2bf944d9a45589c687737e, type: 3}
   - m_RefCount: 2
@@ -41713,6 +41713,11 @@ PrefabInstance:
       propertyPath: MaskScale.y
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4235672988850464798, guid: d73aa2d3898a69541852a65f3a8e14e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5398178833225175955, guid: d73aa2d3898a69541852a65f3a8e14e0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41727,6 +41732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -2.0599995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809262259763442340, guid: d73aa2d3898a69541852a65f3a8e14e0,
+        type: 3}
+      propertyPath: orthographic size
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8880118822450754286, guid: d73aa2d3898a69541852a65f3a8e14e0,
         type: 3}
@@ -43692,6 +43702,12 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1320278442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 807189660672731000, guid: e4699a778a7c43a4d9d7adea59d40434,
+    type: 3}
+  m_PrefabInstance: {fileID: 9068353889937296573}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1329992672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61631,18 +61647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1506159474 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 482695563659542625, guid: 42cd99b22c10734449d82319cbf60975,
-    type: 3}
-  m_PrefabInstance: {fileID: 405812845640932954}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1512652173 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4249208751816686, guid: 3d2a551cb5b32194898fd8fb30716e53,
@@ -65094,7 +65098,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 1506159474}
+      objectReference: {fileID: 0}
     - target: {fileID: 482695563659542625, guid: 42cd99b22c10734449d82319cbf60975,
         type: 3}
       propertyPath: ExitOffset.x
@@ -66081,7 +66085,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room1Gate2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 482695563659542625, guid: 42cd99b22c10734449d82319cbf60975, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -66113,7 +66118,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 8609284887323805061}
+      objectReference: {fileID: 0}
     - target: {fileID: 3492844957872100705, guid: 137cc7e054e38854bbfd18a9965d4f42,
         type: 3}
       propertyPath: m_Name
@@ -66184,18 +66189,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 137cc7e054e38854bbfd18a9965d4f42, type: 3}
---- !u!114 &8609284887323805061 stripped
+--- !u!114 &8609284887323805064
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 766475245013797176, guid: e4699a778a7c43a4d9d7adea59d40434,
-    type: 3}
-  m_PrefabInstance: {fileID: 9068353889937296573}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1320278442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
+  m_Script: {fileID: 11500000, guid: d0514923403e9914a8af28838e64a4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonActivatedRequirement: 2
+  RequiresPlayerType: 1
+  RequiresButtonActivationAbility: 0
+  Activable: 1
+  AutoActivation: 1
+  AutoActivationAndButtonInteraction: 0
+  AutoActivationDelay: 0
+  AutoActivationDelayResetsOnExit: 1
+  CanOnlyActivateIfGrounded: 0
+  ShouldUpdateState: 1
+  OnlyOneActivationAtOnce: 1
+  TargetLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  UnlimitedActivations: 1
+  MaxNumberOfActivations: 0
+  NumberOfActivationsLeft: 0
+  DelayBetweenUses: 0
+  DisableAfterUse: 0
+  InputType: 0
+  InputButton: Interact
+  InputKey: 32
+  AnimationTriggerParameterName: 
+  UseVisualPrompt: 1
+  ButtonPromptPrefab: {fileID: 0}
+  ButtonPromptText: A
+  ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 1}
+  ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
+  AlwaysShowPrompt: 0
+  ShowPromptWhenColliding: 0
+  HidePromptAfterUse: 0
+  PromptRelativePosition: {x: 0, y: 0, z: 0}
+  PromptRotation: {x: 0, y: 0, z: 0}
+  ActivationFeedback: {fileID: 0}
+  DeniedFeedback: {fileID: 0}
+  EnterFeedback: {fileID: 0}
+  ExitFeedback: {fileID: 0}
+  OnActivation:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStay:
+    m_PersistentCalls:
+      m_Calls: []
+  LevelName: EntryPoint-Procedural
+  UseEntryPoints: 0
+  PointOfEntryIndex: 0
+  FacingDirection: 0
 --- !u!1001 &9068353889937296573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66284,10 +66342,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room1Gate1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 766475245013797176, guid: e4699a778a7c43a4d9d7adea59d40434, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 807189660672731000, guid: e4699a778a7c43a4d9d7adea59d40434,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8609284887323805064}
   m_SourcePrefab: {fileID: 100100000, guid: e4699a778a7c43a4d9d7adea59d40434, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
