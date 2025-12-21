@@ -38,9 +38,9 @@ MonoBehaviour:
     AllowEquipShortcut: 1
     AllowUseShortcut: 1
   Quantity: 1
-  ItemName: Pearl (SuperRare)
-  ShortDescription: Uncommon Pearl
-  Description: A super duper rare
+  ItemName: Moonlight
+  ShortDescription: A Very rare pearl
+  Description: The most sought after pearl that shines like moonlight
   Icon: {fileID: 21300000, guid: cc1a358ca6f4d0b48b4788b946df197a, type: 3}
   Prefab: {fileID: 1136408400419902, guid: ac21c10249c92d14cb18a837ec86024d, type: 3}
   ForcePrefabDropQuantity: 0
