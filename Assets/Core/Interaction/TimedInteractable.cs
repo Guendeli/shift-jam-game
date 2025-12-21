@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.InventoryEngine;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -18,6 +19,11 @@ public class TimedInteractable : MonoBehaviour
     [Header("Visual Settings")] 
     public Image FillableTimer;
     
+    [Header("Inventory")]
+    public string InventoryName;
+    
+    
+    
     private float _timer = 0;
     private bool _isInteractionDone = false;
     
@@ -26,14 +32,9 @@ public class TimedInteractable : MonoBehaviour
     {
         Reset();
     }
+    
 
-    // Update is called once per frame
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
-
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (_isInteractionDone)
             return;
@@ -48,10 +49,33 @@ public class TimedInteractable : MonoBehaviour
         }
     }
 
+    public void Resale()
+    {
+        Inventory inventory = Inventory.FindInventory(InventoryName, "Player1");
+
+        for (int i = 0; i < inventory.Content.Length; i++)
+        {
+            inventory.EmptyInventory();
+            
+        }
+    }
+
+
+    public void DebugMessage()
+    {
+        Debug.Log("Debug Timed Interactable");
+    }
+    
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        Reset();
+    }
+
     private void OnTriggerExit(Collider other)
     {
         OnInteractionExit.Invoke();
-        Reset();
+        
     }
 
     private void Reset()
