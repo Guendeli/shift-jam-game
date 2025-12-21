@@ -8,6 +8,13 @@ using UnityEngine.Tilemaps;
 
 namespace MoreMountains.TopDownEngine
 {
+	
+	public enum SpawnType
+	{
+		All,
+		RandomPick
+	}
+	
 	/// <summary>
 	/// This component, added on an empty object in your level will handle the generation of a unique and randomized tilemap
 	/// </summary>
@@ -51,6 +58,7 @@ namespace MoreMountains.TopDownEngine
 		[Tooltip("the minimum distance that should separate spawn and exit.")]
 		public float MinDistanceFromSpawnToExit = 2f;
 
+		public SpawnType SpawnType = SpawnType.All;
 		/// a list of prefabs to spawn and their quantity
 		[Tooltip("a list of prefabs to spawn and their quantity")]
 		public List<SpawnData> PrefabsToSpawn;
@@ -137,37 +145,50 @@ namespace MoreMountains.TopDownEngine
 			int width = UnityEngine.Random.Range(GridWidth.x, GridWidth.y);
 			int height = UnityEngine.Random.Range(GridHeight.x, GridHeight.y);
 
-			foreach (SpawnData data in PrefabsToSpawn)
+			if (SpawnType == SpawnType.All)
 			{
-				for (int i = 0; i < data.Quantity; i++)
+				foreach (SpawnData data in PrefabsToSpawn)
 				{
-					Vector3 spawnPosition = Vector3.zero;
-
-					bool tooClose = true;
-					int iterationsCount = 0;
-					
-					while (tooClose && (iterationsCount < _maxIterationsCount))
+					for (int i = 0; i < data.Quantity; i++)
 					{
-						spawnPosition = MMTilemap.GetRandomPosition(ObstaclesTilemap, TargetGrid, width, height, false, width * height * 2);
-						
-						tooClose = false;
-						foreach (Vector3 filledPosition in _filledPositions)
-						{
-							if (Vector3.Distance(spawnPosition, filledPosition) < PrefabsSpawnMinDistance)
-							{
-								tooClose = true;
-								break;
-							}
-						}
-						
-						iterationsCount++;
+						InstantiatePrefab(data, width, height);
 					}
-					Instantiate(data.Prefab, spawnPosition, Quaternion.identity);
-					_filledPositions.Add(spawnPosition);
 				}
 			}
+			else
+			{
+				SpawnData rnd = PrefabsToSpawn[UnityEngine.Random.Range(0, PrefabsToSpawn.Count)];
+				InstantiatePrefab(rnd, width, height);
+			}
+			
 		}
-        
+
+		public void InstantiatePrefab(SpawnData data, int width, int height)
+		{
+			Vector3 spawnPosition = Vector3.zero;
+
+			bool tooClose = true;
+			int iterationsCount = 0;
+					
+			while (tooClose && (iterationsCount < _maxIterationsCount))
+			{
+				spawnPosition = MMTilemap.GetRandomPosition(ObstaclesTilemap, TargetGrid, width, height, false, width * height * 2);
+						
+				tooClose = false;
+				foreach (Vector3 filledPosition in _filledPositions)
+				{
+					if (Vector3.Distance(spawnPosition, filledPosition) < PrefabsSpawnMinDistance)
+					{
+						tooClose = true;
+						break;
+					}
+				}
+						
+				iterationsCount++;
+			}
+			Instantiate(data.Prefab, spawnPosition, Quaternion.identity);
+			_filledPositions.Add(spawnPosition);
+		}
 		/// <summary>
 		/// Copies the contents of the Walls layer to the WallsShadows layer to get nice shadows automatically
 		/// </summary>
