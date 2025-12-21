@@ -810,13 +810,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d9bf1ac07f3659498e89157301c9746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MoreMountains.TopDownEngine::MoreMountains.TopDownEngine.Loot
-  LootMode: 0
+  LootMode: 1
   GameObjectToLoot: {fileID: 1136408400419902, guid: c298aba41ab5e684fbcd1e4dd4eabc4a,
     type: 3}
   LootTable:
     ObjectsToLoot:
-    - Loot: {fileID: 0}
-      Weight: 0
+    - Loot: {fileID: 1136408400419902, guid: c298aba41ab5e684fbcd1e4dd4eabc4a, type: 3}
+      Weight: 0.4
+      ChancePercentage: 0
+    - Loot: {fileID: 1136408400419902, guid: f0f09464b2de97d4d84c59e840a5eca3, type: 3}
+      Weight: 0.3
+      ChancePercentage: 0
+    - Loot: {fileID: 1136408400419902, guid: 30e926f770ce81f4c80b4af1f754d6a7, type: 3}
+      Weight: 0.1
+      ChancePercentage: 0
+    - Loot: {fileID: 1136408400419902, guid: ac21c10249c92d14cb18a837ec86024d, type: 3}
+      Weight: 0.1
       ChancePercentage: 0
     WeightsTotal: 0
   LootTableSO: {fileID: 0}

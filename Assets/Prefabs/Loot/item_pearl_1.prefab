@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 114366886109299466}
   - component: {fileID: 2578904003073367510}
   m_Layer: 0
-  m_Name: PearlPicker_3
+  m_Name: item_pearl_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   DisableColliderOnPick: 0
   DisableObjectOnPick: 1
   DisableDelay: 0
-  DisableModelOnPick: 0
+  DisableModelOnPick: 1
   DisableTargetObjectOnPick: 0
   TargetObjectToDisable: {fileID: 0}
   TargetObjectDisableDelay: 1
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fd837a0abc28d4d91c55590bd2c090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: dfa2adf8c45b1af40973101c6b4e3925, type: 2}
+  Item: {fileID: 11400000, guid: 1d3a3e96f10f4a34fbaa9188b9e1496b, type: 2}
   Quantity: 1
   RemainingQuantity: 1
   PickableIfInventoryIsFull: 0
@@ -409,7 +409,7 @@ SpriteRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: cc1a358ca6f4d0b48b4788b946df197a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aca9a9a032b74bd4da4dae101284d59b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

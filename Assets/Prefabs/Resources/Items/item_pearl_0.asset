@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fac9bd89dcafc049b19f543ccf8fd57, type: 3}
-  m_Name: item_pearl_2
+  m_Name: item_pearl_0
   m_EditorClassIdentifier: 
-  ItemID: item_pearl_common
+  ItemID: item_pearl_0
   TargetInventoryName: KoalaMainInventory
   ForceSlotIndex: 0
   TargetIndex: 0
@@ -38,11 +38,11 @@ MonoBehaviour:
     AllowEquipShortcut: 1
     AllowUseShortcut: 1
   Quantity: 1
-  ItemName: Pearl
-  ShortDescription: Uncommon Pearl
+  ItemName: Pearl (Common)
+  ShortDescription: Common Pearl
   Description: The easiest pearl to find
   Icon: {fileID: 21300000, guid: a68687effabf5d04dbc0319ec687d572, type: 3}
-  Prefab: {fileID: 1136408400419902, guid: f0f09464b2de97d4d84c59e840a5eca3, type: 3}
+  Prefab: {fileID: 1136408400419902, guid: c298aba41ab5e684fbcd1e4dd4eabc4a, type: 3}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
   DropProperties:

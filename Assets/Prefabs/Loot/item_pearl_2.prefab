@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 114366886109299466}
   - component: {fileID: 2578904003073367510}
   m_Layer: 0
-  m_Name: PearlPicker_2
+  m_Name: item_pearl_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fd837a0abc28d4d91c55590bd2c090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: dfa2adf8c45b1af40973101c6b4e3925, type: 2}
+  Item: {fileID: 11400000, guid: 3ab061d89596a7b4abd29383ad750f26, type: 2}
   Quantity: 1
   RemainingQuantity: 1
   PickableIfInventoryIsFull: 0
